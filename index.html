@@ -44,7 +44,6 @@
     <section class="hero-section" id="hero">
       <div class="container hero-content">
         <h1 class="hero-title">
-          <span class="hero-greeting">Hola, soy Jero.</span>
           Desarrollador Full-Stack &amp; Móvil
         </h1>
 
@@ -206,192 +205,172 @@
     <section class="section" id="proyectos">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">PROYECTOS Y CASOS PRÁCTICOS</h2>
+          <span class="section-kicker">/Proyectos</span>
+          <h2 class="section-title">PROYECTOS Y SISTEMAS CONSTRUIDOS</h2>
           <p class="section-subtitle">
-            Soluciones completas construidas desde cero. Cada proyecto incluye arquitectura comprobable, código fuente y despliegue funcional.
+            Sistemas completos construidos desde cero con rigor técnico, código limpio y resiliencia. Cada solución incluye arquitectura verificable y despliegue funcional.
           </p>
         </div>
 
-        <div class="projects-grid">
-          <!-- Featured Project 1: Asymmetric Full Width -->
-          <article class="project-card featured-card">
-            <div class="card-inner">
-              <div class="card-preview">
-                <div class="preview-mockup">
-                  <div class="mockup-bar">
-                    <span class="m-dot red"></span>
-                    <span class="m-dot yellow"></span>
-                    <span class="m-dot green"></span>
-                    <span class="m-url">https://sis-terremoto.local</span>
-                  </div>
-                  <div class="mockup-screen-view">
-                    <div class="data-stream-panel">
-                      <div class="stream-stat">
-                        <span class="stat-name">Resiliencia de Red</span>
-                        <span class="stat-number">100% Offline Autónomo</span>
-                      </div>
-                      <div class="stream-stat">
-                        <span class="stat-name">Triaje Médico</span>
-                        <span class="stat-number">Protocolo START Activo</span>
-                      </div>
-                      <div class="terminal-feed">
-                        <span>[Sismo 7.2] Red eléctrica caída &bull; Modo local activado</span>
-                        <span>[Rescate] 142 a salvo &bull; Georreferenciación enviada a Bomberos</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card-content">
-                <span class="card-badge emerald">PROYECTO DESTACADO &bull; RESILIENCIA OFFLINE</span>
-                <h3 class="card-title">SIS-TERREMOTO &bull; Sistema Táctico de Evacuación y Triaje</h3>
-                <p class="card-desc">
-                  Plataforma táctica de respuesta rápida concebida bajo el principio de resiliencia total offline ante el colapso de infraestructura eléctrica y celular. Garantiza el censo en tiempo real, georreferenciación de personas atrapadas y triaje médico START para cuerpos de socorro (Bomberos, Cruz Roja).
+        <div class="showcase-projects-list">
+          <!-- 01: SIS-TERREMOTO (Image Left / Content Right) -->
+          <article class="showcase-item">
+            <div class="showcase-media">
+              <a href="https://github.com/Jero1211/sis-terremoto" target="_blank" rel="noopener noreferrer" class="showcase-image-wrapper">
+                <img src="assets/projects/sis-terremoto.jpg" alt="SIS-TERREMOTO Interfaz Táctica de Triaje y Evacuación" loading="lazy" class="showcase-img">
+                <div class="showcase-image-overlay"></div>
+              </a>
+            </div>
+            <div class="showcase-content">
+              <span class="showcase-kicker">Proyecto Destacado &bull; Resiliencia Offline</span>
+              <h3 class="showcase-title">
+                <a href="https://github.com/Jero1211/sis-terremoto" target="_blank" rel="noopener noreferrer">SIS-TERREMOTO</a>
+              </h3>
+              <div class="showcase-card">
+                <p>
+                  Plataforma táctica de respuesta rápida concebida bajo arquitectura <strong>100% Offline-First</strong> ante el colapso total de redes eléctricas y celulares. Integra censo en tiempo real, georreferenciación de personas atrapadas, triaje médico <strong>START</strong> para cuerpos de rescate (Bomberos, Cruz Roja) y túneles de contingencia Cloudflare.
                 </p>
-
-                <div class="tech-spec-list">
-                  <div class="spec-item">
-                    <span class="spec-label">Arquitectura:</span>
-                    <span class="spec-value">Offline-First con túneles Cloudflare de contingencia</span>
-                  </div>
-                  <div class="spec-item">
-                    <span class="spec-label">Resiliencia:</span>
-                    <span class="spec-value">Operación 100% autónoma en móviles, tablets y PCs</span>
-                  </div>
-                  <div class="spec-item">
-                    <span class="spec-label">Bases de Datos:</span>
-                    <span class="spec-value">Arquitectura híbrida MongoDB / PostgreSQL / Excel</span>
-                  </div>
-                </div>
-
-                <div class="card-tags">
-                  <span class="tag">JavaScript Moderno</span>
-                  <span class="tag">Arquitectura Offline</span>
-                  <span class="tag">Triaje START</span>
-                  <span class="tag">Cloudflare Tunnel</span>
-                  <span class="tag">Node.js</span>
-                </div>
-
-                <div class="card-links">
-                  <a href="#sobre-mi" class="btn btn-cyan btn-sm">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                    </svg>
-                    <span>Ver Caso de Estudio</span>
-                  </a>
-                  <a href="https://github.com/Jero1211/sis-terremoto" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                    </svg>
-                    <span>Repositorio</span>
-                  </a>
-                </div>
+              </div>
+              <ul class="showcase-tech-list">
+                <li>JavaScript Moderno</li>
+                <li>Arquitectura Offline-First</li>
+                <li>Triaje START</li>
+                <li>Cloudflare Tunnel</li>
+                <li>Node.js</li>
+                <li>GIS Mapping</li>
+              </ul>
+              <div class="showcase-links">
+                <a href="#sobre-mi" class="btn btn-cyan btn-sm">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                  </svg>
+                  <span>Ver Caso de Estudio</span>
+                </a>
+                <a href="https://github.com/Jero1211/sis-terremoto" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  <span>Código GitHub</span>
+                </a>
               </div>
             </div>
           </article>
 
-          <!-- Project 2: CaddiePro -->
-          <article class="project-card">
-            <div class="card-inner">
-              <span class="card-badge">FULL-STACK &bull; CLUB CAMPESTRE</span>
-              <h3 class="card-title">CaddiePro &bull; Horarios y Becarios</h3>
-              <p class="card-desc">
-                Sistema de gestión y asignación de turnos desarrollado para la Fundación Club Campestre. Automatiza el seguimiento de acompañamientos, importación inteligente de Excel y generación de reportes en PDF.
-              </p>
-
-              <div class="spec-highlight">
-                <div class="highlight-metric">
-                  <span class="hm-num">Full-Stack</span>
-                  <span class="hm-lbl">Node.js + Express + Mongo</span>
-                </div>
-                <div class="highlight-metric">
-                  <span class="hm-num">PDF/Excel</span>
-                  <span class="hm-lbl">Automatización de reportes</span>
-                </div>
+          <!-- 02: Turismo Medellín (Content Left / Image Right) -->
+          <article class="showcase-item showcase-inverted">
+            <div class="showcase-media">
+              <a href="https://jero1211.github.io/Turismo" target="_blank" rel="noopener noreferrer" class="showcase-image-wrapper">
+                <img src="assets/projects/turismo-medellin.png" alt="Turismo Medellín Plataforma React 19 con Asistente IA" loading="lazy" class="showcase-img">
+                <div class="showcase-image-overlay"></div>
+              </a>
+            </div>
+            <div class="showcase-content">
+              <span class="showcase-kicker emerald">Proyecto Destacado &bull; React 19 + IA En Vivo</span>
+              <h3 class="showcase-title">
+                <a href="https://jero1211.github.io/Turismo" target="_blank" rel="noopener noreferrer">Turismo Medellín</a>
+              </h3>
+              <div class="showcase-card">
+                <p>
+                  Plataforma web turística interactiva con <strong>Asistente de Inteligencia Artificial</strong>, planificador y editor dinámico de rutas en Medellín, análisis de trayectos y chat interactivo. Construida con <strong>React 19 y Vite</strong>, con despliegue público y rendimiento optimizado.
+                </p>
               </div>
-
-              <div class="card-tags">
-                <span class="tag">Node.js</span>
-                <span class="tag">Express</span>
-                <span class="tag">MongoDB</span>
-                <span class="tag">REST API</span>
-                <span class="tag">Postman</span>
-              </div>
-
-              <div class="card-links">
-                <a href="https://github.com/Jero1211/caddiepro-app-horarios" target="_blank" rel="noopener noreferrer" class="btn btn-cyan btn-sm">Ver Proyecto</a>
-                <a href="https://github.com/Jero1211/caddiepro-app-horarios" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">GitHub</a>
+              <ul class="showcase-tech-list">
+                <li>React 19</li>
+                <li>Vite</li>
+                <li>Asistente IA</li>
+                <li>Route Planner</li>
+                <li>Geolocalización</li>
+                <li>GitHub Pages</li>
+              </ul>
+              <div class="showcase-links">
+                <a href="https://jero1211.github.io/Turismo" target="_blank" rel="noopener noreferrer" class="btn btn-cyan btn-sm">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                  <span>Ver Demo Online</span>
+                </a>
+                <a href="https://github.com/Jero1211/Turismo" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  <span>Código GitHub</span>
+                </a>
               </div>
             </div>
           </article>
 
-          <!-- Project 3: Turismo Medellín -->
-          <article class="project-card">
-            <div class="card-inner">
-              <span class="card-badge emerald">REACT 19 &bull; ASISTENTE IA EN VIVO</span>
-              <h3 class="card-title">Turismo Medellín &bull; React 19 + Asistente IA</h3>
-              <p class="card-desc">
-                Plataforma web turística interactiva con Asistente de IA integrado, planificador y editor dinámico de rutas, análisis de trayectos y chat widget interactivo. Construida con React 19 y Vite, desplegada en GitHub Pages.
-              </p>
-
-              <div class="spec-highlight">
-                <div class="highlight-metric">
-                  <span class="hm-num">React 19</span>
-                  <span class="hm-lbl">Vite + Asistente IA</span>
-                </div>
-                <div class="highlight-metric">
-                  <span class="hm-num">En Vivo</span>
-                  <span class="hm-lbl">Desplegado en GitHub Pages</span>
-                </div>
+          <!-- 03: CaddiePro (Image Left / Content Right) -->
+          <article class="showcase-item">
+            <div class="showcase-media">
+              <a href="https://github.com/Jero1211/caddiepro-app-horarios" target="_blank" rel="noopener noreferrer" class="showcase-image-wrapper">
+                <img src="assets/projects/caddiepro.jpg" alt="CaddiePro Plataforma de Asignación y Gestión de Turnos" loading="lazy" class="showcase-img">
+                <div class="showcase-image-overlay"></div>
+              </a>
+            </div>
+            <div class="showcase-content">
+              <span class="showcase-kicker">Full-Stack &bull; Fundación Club Campestre</span>
+              <h3 class="showcase-title">
+                <a href="https://github.com/Jero1211/caddiepro-app-horarios" target="_blank" rel="noopener noreferrer">CaddiePro &bull; Horarios y Becarios</a>
+              </h3>
+              <div class="showcase-card">
+                <p>
+                  Sistema empresarial de gestión y asignación de turnos desarrollado para la <strong>Fundación Club Campestre</strong>. Automatiza el seguimiento de acompañamientos de caddies, importación inteligente y parseo de nóminas en <strong>Excel</strong> y motor de generación de reportes en <strong>PDF</strong>.
+                </p>
               </div>
-
-              <div class="card-tags">
-                <span class="tag">React 19</span>
-                <span class="tag">Asistente IA</span>
-                <span class="tag">Route Planner</span>
-                <span class="tag">Vite</span>
-                <span class="tag">GitHub Pages</span>
-              </div>
-
-              <div class="card-links">
-                <a href="https://jero1211.github.io/Turismo" target="_blank" rel="noopener noreferrer" class="btn btn-cyan btn-sm">Ver Demo Online</a>
-                <a href="https://github.com/Jero1211/Turismo" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">GitHub</a>
+              <ul class="showcase-tech-list">
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>MongoDB</li>
+                <li>REST API</li>
+                <li>Motor Excel (XLSX)</li>
+                <li>Generación PDF</li>
+              </ul>
+              <div class="showcase-links">
+                <a href="https://github.com/Jero1211/caddiepro-app-horarios" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  <span>Código GitHub</span>
+                </a>
               </div>
             </div>
           </article>
 
-          <!-- Project 4: MicroApp Inspecciones -->
-          <article class="project-card">
-            <div class="card-inner">
-              <span class="card-badge">APP MÓVIL &bull; ANDROID NATIVO</span>
-              <h3 class="card-title">MicroApp Inspecciones &bull; App Móvil Android</h3>
-              <p class="card-desc">
-                Aplicación móvil híbrida para auditorías e inspecciones técnicas en terreno. Desarrollada con Ionic y Angular, empaquetada nativamente para Android con Capacitor y persistencia local de datos.
-              </p>
-
-              <div class="spec-highlight">
-                <div class="highlight-metric">
-                  <span class="hm-num">Android</span>
-                  <span class="hm-lbl">Capacitor 8 Nativo</span>
-                </div>
-                <div class="highlight-metric">
-                  <span class="hm-num">Ionic 9</span>
-                  <span class="hm-lbl">Angular + TypeScript</span>
-                </div>
+          <!-- 04: MicroApp Inspecciones (Content Left / Image Right) -->
+          <article class="showcase-item showcase-inverted">
+            <div class="showcase-media">
+              <a href="https://github.com/Jero1211/microapp-inspecciones" target="_blank" rel="noopener noreferrer" class="showcase-image-wrapper">
+                <img src="assets/projects/microapp-inspecciones.jpg" alt="MicroApp Inspecciones App Móvil Android con Capacitor" loading="lazy" class="showcase-img">
+                <div class="showcase-image-overlay"></div>
+              </a>
+            </div>
+            <div class="showcase-content">
+              <span class="showcase-kicker emerald">App Móvil &bull; Android Nativo &amp; Terreno</span>
+              <h3 class="showcase-title">
+                <a href="https://github.com/Jero1211/microapp-inspecciones" target="_blank" rel="noopener noreferrer">MicroApp Inspecciones</a>
+              </h3>
+              <div class="showcase-card">
+                <p>
+                  Aplicación móvil híbrida para auditorías e inspecciones técnicas en terreno. Desarrollada con <strong>Ionic 9 y Angular</strong>, empaquetada nativamente para <strong>Android con Capacitor 8</strong>. Cuenta con captura de evidencia fotográfica, firma digital, checklists de verificación y persistencia local sin conexión.
+                </p>
               </div>
-
-              <div class="card-tags">
-                <span class="tag">Ionic 9</span>
-                <span class="tag">Angular</span>
-                <span class="tag">Capacitor</span>
-                <span class="tag">TypeScript</span>
-                <span class="tag">Android</span>
-              </div>
-
-              <div class="card-links">
-                <a href="https://github.com/Jero1211/microapp-inspecciones" target="_blank" rel="noopener noreferrer" class="btn btn-cyan btn-sm">Ver Detalles</a>
-                <a href="https://github.com/Jero1211/microapp-inspecciones" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">GitHub</a>
+              <ul class="showcase-tech-list">
+                <li>Ionic 9</li>
+                <li>Angular</li>
+                <li>Capacitor 8</li>
+                <li>TypeScript</li>
+                <li>Android SDK</li>
+                <li>Persistencia Offline</li>
+              </ul>
+              <div class="showcase-links">
+                <a href="https://github.com/Jero1211/microapp-inspecciones" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  <span>Código GitHub</span>
+                </a>
               </div>
             </div>
           </article>
@@ -727,5 +706,8 @@
   </footer>
 
   <script src="app.js"></script>
+<!-- impeccable-live-start -->
+<script src="http://localhost:8400/live.js?token=0ae57a1c-44b1-4c07-bbf6-2b2559863a34"></script>
+<!-- impeccable-live-end -->
 </body>
 </html>
