@@ -18,44 +18,54 @@ function initSpecimenShowcase() {
     {
       title: 'SIS-TERREMOTO',
       filename: 'sis-terremoto-core.js',
+      image: 'assets/projects/sis-terremoto-real.png',
+      alt: 'Captura real de SIS-TERREMOTO - Centro de Operaciones Offline',
+      badge: '100% OFFLINE READY',
+      badgeClass: 'badge-emerald',
+      statusPill: 'OFFLINE READY',
       description: 'Sistema táctico de respuesta rápida ante sismos con arquitectura 100% Offline-First, triaje médico START, censo en tiempo real y georreferenciación para rescate.',
       tags: ['Arquitectura Offline', 'Triaje START', 'Cloudflare Tunnel', 'Resiliencia Táctica'],
-      demoUrl: '#proyectos',
-      githubUrl: 'https://github.com/Jero1211/sis-terremoto',
-      metrics: {
-        nodes: '100% Offline',
-        paint: '0.12s',
-        score: 'Resiliencia: Crítica'
-      },
-      bars: ['85%', '95%', '100%', '90%', '75%', '92%', '98%']
+      demoUrl: '#sis-terremoto',
+      githubUrl: 'https://github.com/Jero1211/sis-terremoto'
     },
     {
       title: 'CaddiePro',
       filename: 'caddiepro-server.js',
-      description: 'Plataforma Full-Stack para la Fundación Club Campestre: gestión de horarios de caddies y becarios, importación de Excel, reportes PDF y API REST en Node.js.',
+      image: 'assets/projects/caddiepro-dashboard.png',
+      alt: 'Captura real de CaddiePro - Dashboard Fundación Club Campestre',
+      badge: 'REST API PRODUCTION',
+      badgeClass: 'badge-indigo',
+      statusPill: 'FULL-STACK MERN',
+      description: 'Plataforma Full-Stack para la Fundación Club Campestre: gestión de turnos de caddies y becarios, importación de Excel, reportes PDF y API REST en Node.js.',
       tags: ['Node.js', 'Express', 'MongoDB', 'PDF Engine', 'Excel Importer'],
-      demoUrl: '#proyectos',
-      githubUrl: 'https://github.com/Jero1211/caddiepro-app-horarios',
-      metrics: {
-        nodes: 'Full-Stack',
-        paint: '0.24s',
-        score: 'API REST 60 req/s'
-      },
-      bars: ['60%', '75%', '85%', '95%', '70%', '80%', '90%']
+      demoUrl: '#caddiepro',
+      githubUrl: 'https://github.com/Jero1211/caddiepro-app-horarios'
     },
     {
       title: 'Turismo Medellín',
       filename: 'turismo-ai-planner.jsx',
+      image: 'assets/projects/turismo-medellin.png',
+      alt: 'Captura en vivo de Turismo Medellín - React 19 + Asistente IA',
+      badge: 'REACT 19 + IA EN VIVO',
+      badgeClass: 'badge-cyan',
+      statusPill: 'GITHUB PAGES LIVE',
       description: 'Plataforma web turística con Asistente de IA integrado, planificador inteligente de rutas, análisis de trayectos y chat widget interactivo. Construida en React 19 y Vite.',
       tags: ['React 19', 'Asistente IA', 'Route Planner', 'Vite', 'GitHub Pages'],
       demoUrl: 'https://jero1211.github.io/Turismo',
-      githubUrl: 'https://github.com/Jero1211/Turismo',
-      metrics: {
-        nodes: 'React 19 + IA',
-        paint: '0.18s',
-        score: 'En Vivo en GitHub Pages'
-      },
-      bars: ['70%', '85%', '65%', '92%', '88%', '95%', '100%']
+      githubUrl: 'https://github.com/Jero1211/Turismo'
+    },
+    {
+      title: 'CampusAudit PRO',
+      filename: 'campus-audit-mobile.ts',
+      image: 'assets/projects/campus-audit-real.png',
+      alt: 'Captura real de CampusAudit PRO - Formulario de Auditoría en Campo',
+      badge: 'IONIC + CAPACITOR',
+      badgeClass: 'badge-yellow',
+      statusPill: 'OFFLINE SQLITE',
+      description: 'Microapp de campo y auditoría técnica para UniLasallista: inspección de infraestructura, categorización de criticidad, almacenamiento offline con SQLite y sincronización centralizada.',
+      tags: ['Ionic', 'Capacitor', 'Angular', 'SQLite', 'Inspección en Campo'],
+      demoUrl: '#campus-audit',
+      githubUrl: 'https://github.com/Jero1211'
     }
   ];
 
@@ -64,7 +74,10 @@ function initSpecimenShowcase() {
   const descEl = document.getElementById('project-desc');
   const tagsEl = document.getElementById('project-tags');
   const filenameEl = document.getElementById('screen-filename');
-  const barsEl = document.querySelectorAll('.sim-chart-area .bar');
+  const statusPillEl = document.getElementById('screen-status-pill');
+  const imgEl = document.getElementById('screen-mockup-img');
+  const badgeOverlayEl = document.getElementById('screen-badge-overlay');
+  const badgeTextEl = document.getElementById('screen-badge-text');
   const demoBtn = document.getElementById('project-demo-btn');
   const githubBtn = document.getElementById('project-github-btn');
 
@@ -89,6 +102,28 @@ function initSpecimenShowcase() {
       descEl.textContent = data.description;
       filenameEl.textContent = data.filename;
 
+      if (statusPillEl && data.statusPill) {
+        statusPillEl.textContent = data.statusPill;
+      }
+
+      // Smooth Image Switch with Cross-fade
+      if (imgEl && data.image) {
+        imgEl.classList.add('fade-out');
+        setTimeout(() => {
+          imgEl.src = data.image;
+          imgEl.alt = data.alt;
+          imgEl.classList.remove('fade-out');
+        }, 150);
+      }
+
+      // Update Badge
+      if (badgeTextEl && data.badge) {
+        badgeTextEl.textContent = data.badge;
+      }
+      if (badgeOverlayEl && data.badgeClass) {
+        badgeOverlayEl.className = 'screen-badge-overlay ' + data.badgeClass;
+      }
+
       // Update Tags
       tagsEl.innerHTML = '';
       data.tags.forEach((tagText) => {
@@ -101,13 +136,6 @@ function initSpecimenShowcase() {
       // Update Links
       demoBtn.setAttribute('href', data.demoUrl);
       githubBtn.setAttribute('href', data.githubUrl);
-
-      // Animate Bar heights
-      barsEl.forEach((bar, i) => {
-        if (data.bars[i]) {
-          bar.style.setProperty('--height', data.bars[i]);
-        }
-      });
     });
   });
 }

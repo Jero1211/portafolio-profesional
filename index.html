@@ -92,55 +92,18 @@
                   </div>
                   <div class="screen-title" id="screen-filename">sis-terremoto-core.js</div>
                   <div class="screen-status">
-                    <span class="live-pill">OFFLINE READY</span>
+                    <span class="live-pill" id="screen-status-pill">OFFLINE READY</span>
                   </div>
                 </div>
 
-                <!-- Interactive UI Simulation inside the Screen -->
-                <div class="screen-content" id="screen-viewport">
-                  <div class="sim-sidebar">
-                    <div class="sim-brand">J|P</div>
-                    <div class="sim-nav-item active"></div>
-                    <div class="sim-nav-item"></div>
-                    <div class="sim-nav-item"></div>
-                  </div>
-                  <div class="sim-main sim-variant-3">
-                    <div class="v3-cockpit-bar">
-                      <div class="v3-heading">
-                        <span class="v3-title">CENTRO DE OPERACIONES</span>
-                        <span class="v3-sub">UNILASALLISTA &bull; ZONA CERO</span>
-                      </div>
-                      <span class="v3-beacon">EN SERVICIO</span>
-                    </div>
-                    <div class="v3-kpi-row">
-                      <div class="v3-kpi-card">
-                        <div class="v3-kpi-top">
-                          <span class="v3-kpi-val">100%</span>
-                          <span class="v3-mini-trend">&uarr;</span>
-                        </div>
-                        <span class="v3-kpi-lbl">Operatividad</span>
-                      </div>
-                      <div class="v3-kpi-card">
-                        <div class="v3-kpi-top">
-                          <span class="v3-kpi-val">0.08s</span>
-                        </div>
-                        <span class="v3-kpi-lbl">RPS Local</span>
-                      </div>
-                      <div class="v3-kpi-card">
-                        <div class="v3-kpi-top">
-                          <span class="v3-kpi-val">P2P</span>
-                        </div>
-                        <span class="v3-kpi-lbl">Red Local</span>
-                      </div>
-                    </div>
-                    <div class="v3-progress-wrapper">
-                      <div class="v3-progress-meta">
-                        <span>Censo de Emergencia START</span>
-                        <span>47 / 47 Evaluados</span>
-                      </div>
-                      <div class="v3-progress-track">
-                        <div class="v3-progress-fill" style="width: 100%;"></div>
-                      </div>
+                <!-- Interactive Mockup Image Viewport -->
+                <div class="screen-viewport" id="screen-viewport">
+                  <div class="screen-image-wrapper">
+                    <img id="screen-mockup-img" src="assets/projects/sis-terremoto-real.png" alt="Captura real de SIS-TERREMOTO - Centro de Operaciones Offline" class="screen-preview-image">
+                    <div class="screen-glass-glare" aria-hidden="true"></div>
+                    <div class="screen-badge-overlay badge-emerald" id="screen-badge-overlay">
+                      <span class="status-dot pulse" aria-hidden="true"></span>
+                      <span id="screen-badge-text">100% OFFLINE READY</span>
                     </div>
                   </div>
                 </div>
@@ -180,6 +143,7 @@
                   <button class="tab-btn active" role="tab" aria-selected="true" data-index="0">01. SIS-TERREMOTO</button>
                   <button class="tab-btn" role="tab" aria-selected="false" data-index="1">02. CaddiePro</button>
                   <button class="tab-btn" role="tab" aria-selected="false" data-index="2">03. Turismo Medellín</button>
+                  <button class="tab-btn" role="tab" aria-selected="false" data-index="3">04. CampusAudit PRO</button>
                 </div>
               </div>
             </div>
@@ -221,7 +185,7 @@
 
         <div class="showcase-projects-list">
           <!-- 01: SIS-TERREMOTO (Image Left / Content Right) -->
-          <article class="showcase-item">
+          <article class="showcase-item" id="sis-terremoto">
             <div class="showcase-media">
               <a href="https://github.com/Jero1211/sis-terremoto" target="_blank" rel="noopener noreferrer" class="showcase-image-wrapper">
                 <img src="assets/projects/sis-terremoto-real.png" alt="SIS-TERREMOTO Centro de Operaciones UniLasallista - Control Táctico de Evacuación" loading="lazy" class="showcase-img">
@@ -264,7 +228,7 @@
           </article>
 
           <!-- 02: Turismo Medellín (Content Left / Image Right) -->
-          <article class="showcase-item showcase-inverted">
+          <article class="showcase-item showcase-inverted" id="turismo-medellin">
             <div class="showcase-media">
               <a href="https://jero1211.github.io/Turismo" target="_blank" rel="noopener noreferrer" class="showcase-image-wrapper">
                 <img src="assets/projects/turismo-medellin.png" alt="Turismo Medellín MDE Explora Plataforma React 19 con Asistente IA" loading="lazy" class="showcase-img">
@@ -309,7 +273,7 @@
           </article>
 
           <!-- 03: CaddiePro (Image Left / Content Right) -->
-          <article class="showcase-item">
+          <article class="showcase-item" id="caddiepro">
             <div class="showcase-media">
               <a href="https://github.com/Jero1211/caddiepro-app-horarios" target="_blank" rel="noopener noreferrer" class="showcase-image-wrapper">
                 <img src="assets/projects/caddiepro-dashboard.png" alt="CaddiePro Plataforma de Asignación y Gestión de Turnos - Fundación Club Campestre" loading="lazy" class="showcase-img">
@@ -346,7 +310,7 @@
           </article>
 
           <!-- 04: CampusAudit PRO (Content Left / Image Right) -->
-          <article class="showcase-item showcase-inverted">
+          <article class="showcase-item showcase-inverted" id="campus-audit">
             <div class="showcase-media">
               <a href="https://github.com/Jero1211/microapp-inspecciones" target="_blank" rel="noopener noreferrer" class="showcase-image-wrapper">
                 <img src="assets/projects/campus-audit-real.png" alt="CampusAudit PRO - Registro de Inspección Académica con Capacitor" loading="lazy" class="showcase-img">
