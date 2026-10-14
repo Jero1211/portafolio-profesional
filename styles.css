@@ -5,33 +5,46 @@
 
 /* --- Custom Properties / Design Tokens --- */
 :root {
-  /* Colors */
-  --bg-base: #07090E;
-  --bg-surface-1: #0D1117;
-  --bg-surface-2: #161B22;
-  --bg-surface-3: #21262D;
-  --bg-surface-elevated: #1A202C;
+  /* Colors - Linear / Vercel Aesthetic: Electric Indigo & Mint Emerald */
+  --bg-base: #0B0D13;
+  --bg-surface-1: #11141D;
+  --bg-surface-2: #181C28;
+  --bg-surface-3: #222738;
+  --bg-surface-elevated: #1C2232;
 
-  --accent-cyan: #00F0FF;
-  --accent-cyan-dim: rgba(0, 240, 255, 0.15);
-  --accent-cyan-glow: rgba(0, 240, 255, 0.4);
+  --accent-indigo: #4F46E5;
+  --accent-indigo-hover: #4338CA;
+  --accent-indigo-light: #818CF8;
+  --accent-indigo-dim: rgba(79, 70, 229, 0.14);
+  --accent-indigo-glow: rgba(79, 70, 229, 0.35);
 
-  --accent-copper: #E58B35;
-  --accent-copper-dim: rgba(229, 139, 53, 0.15);
-  --accent-copper-glow: rgba(229, 139, 53, 0.35);
+  --accent-emerald: #059669;
+  --accent-emerald-hover: #047857;
+  --accent-emerald-light: #34D399;
+  --accent-emerald-dim: rgba(5, 150, 105, 0.14);
+  --accent-emerald-glow: rgba(5, 150, 105, 0.35);
 
-  --text-primary: #F0F6FC;
-  --text-secondary: #B1BAC4;
-  --text-muted: #8C96A3;
-  --text-inverse: #07090E;
+  /* Semantic Aliases */
+  --accent-cyan: var(--accent-indigo-light);
+  --accent-cyan-dim: var(--accent-indigo-dim);
+  --accent-cyan-glow: var(--accent-indigo-glow);
+
+  --accent-copper: var(--accent-emerald-light);
+  --accent-copper-dim: var(--accent-emerald-dim);
+  --accent-copper-glow: var(--accent-emerald-glow);
+
+  --text-primary: #F8FAFC;
+  --text-secondary: #CBD5E1;
+  --text-muted: #94A3B8;
+  --text-inverse: #FFFFFF;
 
   --border-subtle: rgba(255, 255, 255, 0.08);
-  --border-medium: rgba(255, 255, 255, 0.16);
-  --border-highlight: rgba(0, 240, 255, 0.35);
+  --border-medium: rgba(255, 255, 255, 0.14);
+  --border-highlight: rgba(129, 140, 248, 0.4);
 
-  --status-green: #2EA043;
-  --status-yellow: #D29922;
-  --status-red: #F85149;
+  --status-green: #10B981;
+  --status-yellow: #F59E0B;
+  --status-red: #EF4444;
 
   /* Typography */
   --font-sans: 'Archivo', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -193,7 +206,7 @@ body {
 .nav-link.active {
   color: var(--text-primary);
   background-color: var(--bg-surface-3);
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 .status-dot {
@@ -206,14 +219,12 @@ body {
 }
 
 .status-dot.pulse {
-  box-shadow: 0 0 0 0 rgba(46, 160, 67, 0.7);
-  animation: pulse-ring 2s infinite;
+  animation: pulse-dot 2s infinite ease-in-out;
 }
 
-@keyframes pulse-ring {
-  0% { box-shadow: 0 0 0 0 rgba(46, 160, 67, 0.7); }
-  70% { box-shadow: 0 0 0 8px rgba(46, 160, 67, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(46, 160, 67, 0); }
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.45; transform: scale(0.85); }
 }
 
 /* --- Buttons --- */
@@ -251,14 +262,15 @@ body {
 }
 
 .btn-cyan {
-  background-color: var(--accent-cyan);
-  color: var(--bg-base);
-  border-color: var(--accent-cyan);
+  background-color: var(--accent-indigo);
+  color: #FFFFFF;
+  border-color: var(--accent-indigo);
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
 }
 
 .btn-cyan:hover {
-  background-color: #33f3ff;
+  background-color: var(--accent-indigo-hover);
+  border-color: var(--accent-indigo-hover);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
   transform: translateY(-1px);
 }
@@ -290,10 +302,20 @@ body {
   font-size: clamp(2rem, 5vw, 3.4rem);
   font-weight: 800;
   letter-spacing: -0.03em;
-  line-height: 1.1;
+  line-height: 1.15;
   max-width: 860px;
   margin: 0 auto var(--space-md);
   color: var(--text-primary);
+}
+
+.hero-greeting {
+  display: block;
+  font-size: clamp(1.15rem, 2.5vw, 1.45rem);
+  font-weight: 600;
+  color: var(--accent-emerald);
+  font-family: var(--font-mono);
+  margin-bottom: var(--space-xs);
+  letter-spacing: -0.01em;
 }
 
 .hero-description {
@@ -664,12 +686,13 @@ body {
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
   overflow: hidden;
-  transition: transform var(--transition-smooth), border-color var(--transition-smooth);
+  transition: transform var(--transition-smooth), border-color var(--transition-smooth), box-shadow var(--transition-smooth);
 }
 
 .project-card:hover {
-  transform: translateY(-3px);
+  transform: translateY(-4px);
   border-color: var(--border-highlight);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.5);
 }
 
 .featured-card {
@@ -691,17 +714,26 @@ body {
 }
 
 .card-badge {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   font-family: var(--font-mono);
-  font-size: 0.7rem;
+  font-size: 0.72rem;
   font-weight: 600;
-  color: var(--accent-cyan);
-  letter-spacing: 0.06em;
+  color: var(--accent-indigo-light);
+  background-color: var(--accent-indigo-dim);
+  border: 1px solid rgba(129, 140, 248, 0.25);
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  letter-spacing: 0.05em;
   margin-bottom: var(--space-xs);
+  width: fit-content;
 }
 
+.card-badge.emerald,
 .card-badge.copper {
-  color: var(--accent-copper);
+  color: var(--accent-emerald-light);
+  background-color: var(--accent-emerald-dim);
+  border-color: rgba(52, 211, 153, 0.25);
 }
 
 .card-title {
@@ -858,9 +890,16 @@ body {
   font-family: var(--font-mono);
   font-size: 0.75rem;
   color: var(--text-secondary);
-  background-color: rgba(255, 255, 255, 0.04);
+  background-color: rgba(99, 102, 241, 0.08);
+  border: 1px solid rgba(99, 102, 241, 0.18);
   padding: 3px 8px;
   border-radius: var(--radius-sm);
+  transition: border-color var(--transition-fast), color var(--transition-fast);
+}
+
+.project-card:hover .tag {
+  border-color: rgba(99, 102, 241, 0.35);
+  color: var(--text-primary);
 }
 
 .card-links {
@@ -1193,9 +1232,9 @@ body {
 
 .form-group input:focus,
 .form-group textarea:focus {
-  outline: none;
-  border-color: var(--accent-cyan);
-  box-shadow: 0 0 0 3px var(--accent-cyan-dim);
+  outline: 2px solid var(--accent-indigo);
+  outline-offset: 1px;
+  border-color: var(--accent-indigo);
 }
 
 .form-error {
