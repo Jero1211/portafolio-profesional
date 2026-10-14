@@ -21,7 +21,7 @@ function initSpecimenShowcase() {
       description: 'Sistema táctico de respuesta rápida ante sismos con arquitectura 100% Offline-First, triaje médico START, censo en tiempo real y georreferenciación para rescate.',
       tags: ['Arquitectura Offline', 'Triaje START', 'Cloudflare Tunnel', 'Resiliencia Táctica'],
       demoUrl: '#proyectos',
-      githubUrl: 'https://github.com/Jero1211',
+      githubUrl: 'https://github.com/Jero1211/sis-terremoto',
       metrics: {
         nodes: '100% Offline',
         paint: '0.12s',
@@ -45,15 +45,15 @@ function initSpecimenShowcase() {
     },
     {
       title: 'Turismo Medellín',
-      filename: 'turismo-medellin.jsx',
-      description: 'Plataforma web interactiva para la exploración y recomendación turística de Medellín. Desarrollada en React 19, Vite y React Router, desplegada en GitHub Pages.',
-      tags: ['React 19', 'Vite', 'React Router', 'Lucide Icons', 'GitHub Pages'],
+      filename: 'turismo-ai-planner.jsx',
+      description: 'Plataforma web turística con Asistente de IA integrado, planificador inteligente de rutas, análisis de trayectos y chat widget interactivo. Construida en React 19 y Vite.',
+      tags: ['React 19', 'Asistente IA', 'Route Planner', 'Vite', 'GitHub Pages'],
       demoUrl: 'https://jero1211.github.io/Turismo',
       githubUrl: 'https://github.com/Jero1211/Turismo',
       metrics: {
-        nodes: 'React 19 SPA',
+        nodes: 'React 19 + IA',
         paint: '0.18s',
-        score: 'Lighthouse: 100/100'
+        score: 'En Vivo en GitHub Pages'
       },
       bars: ['70%', '85%', '65%', '92%', '88%', '95%', '100%']
     }
