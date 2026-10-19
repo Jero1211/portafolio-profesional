@@ -138,6 +138,14 @@ function initSpecimenShowcase() {
       githubBtn.setAttribute('href', data.githubUrl);
     });
   });
+
+  // Ensure initial links match the active project on load
+  const activeTab = document.querySelector('.project-tabs .tab-btn.active');
+  const initialIndex = activeTab ? parseInt(activeTab.getAttribute('data-index'), 10) : 0;
+  if (projectsData[initialIndex]) {
+    if (demoBtn) demoBtn.setAttribute('href', projectsData[initialIndex].demoUrl);
+    if (githubBtn) githubBtn.setAttribute('href', projectsData[initialIndex].githubUrl);
+  }
 }
 
 /**
