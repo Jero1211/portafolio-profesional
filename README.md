@@ -2,11 +2,13 @@
 
 > **Desarrollador Web & Móvil en Formación**  
 > Estudiante de 6.º semestre de Ingeniería de Software &bull; Corporación Universitaria Lasallista (UniLasallista)  
-> Medellín, Colombia &bull; [GitHub: @Jero1211](https://github.com/Jero1211) &bull; Correo: `aztracto8@gmail.com`
+> Medellín, Colombia &bull; [GitHub: @Jero1211](https://github.com/Jero1211) &bull; Correo: `aztracto8@gmail.com`  
+> 🌐 **Sitio Web en Producción:** [https://jero1211.github.io/portafolio-profesional/](https://jero1211.github.io/portafolio-profesional/)
 
 ![HTML5](https://img.shields.io/badge/HTML5-Sem%C3%A1ntico-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-Vanilla_Moderno-1572B6?style=flat-square&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![GitHub Pages](https://img.shields.io/badge/Deploy-GitHub_Pages-brightgreen?style=flat-square&logo=github)
 ![Dependencias](https://img.shields.io/badge/Dependencias-Zero%20(Vanilla)-success?style=flat-square)
 ![Rendimiento](https://img.shields.io/badge/Lighthouse-95%2B-brightgreen?style=flat-square)
 
