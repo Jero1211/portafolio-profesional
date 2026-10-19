@@ -23,8 +23,8 @@ function initSpecimenShowcase() {
       badge: '100% OFFLINE READY',
       badgeClass: 'badge-emerald',
       statusPill: 'OFFLINE READY',
-      description: 'Sistema táctico de respuesta rápida ante sismos con arquitectura 100% Offline-First, triaje médico START, censo en tiempo real y georreferenciación para rescate.',
-      tags: ['Arquitectura Offline', 'Triaje START', 'Cloudflare Tunnel', 'Resiliencia Táctica'],
+      description: 'Proyecto universitario para UniLasallista. Construido con JavaScript y apoyo de herramientas de IA para explorar la persistencia local y el registro de triaje START 100% offline ante emergencias.',
+      tags: ['JavaScript', 'Persistencia Offline', 'Triaje START', 'Desarrollo con IA'],
       demoUrl: '#sis-terremoto',
       githubUrl: 'https://github.com/Jero1211/sis-terremoto'
     },
@@ -33,11 +33,11 @@ function initSpecimenShowcase() {
       filename: 'caddiepro-server.js',
       image: 'assets/projects/caddiepro-dashboard.png',
       alt: 'Captura real de CaddiePro - Dashboard Fundación Club Campestre',
-      badge: 'REST API PRODUCTION',
+      badge: 'NODE.JS + MONGODB',
       badgeClass: 'badge-indigo',
-      statusPill: 'FULL-STACK MERN',
-      description: 'Plataforma Full-Stack para la Fundación Club Campestre: gestión de turnos de caddies y becarios, importación de Excel, reportes PDF y API REST en Node.js.',
-      tags: ['Node.js', 'Express', 'MongoDB', 'PDF Engine', 'Excel Importer'],
+      statusPill: 'PRÁCTICA FULL-STACK',
+      description: 'Aplicación web desarrollada para la Fundación Club Campestre. Utilicé Node.js, Express y MongoDB con apoyo de IA para la gestión de turnos, importación de Excel y reportes PDF.',
+      tags: ['Node.js', 'Express', 'MongoDB', 'Lectura de Excel', 'Reportes PDF'],
       demoUrl: '#caddiepro',
       githubUrl: 'https://github.com/Jero1211/caddiepro-app-horarios'
     },
@@ -45,12 +45,12 @@ function initSpecimenShowcase() {
       title: 'Turismo Medellín',
       filename: 'turismo-ai-planner.jsx',
       image: 'assets/projects/turismo-medellin.png',
-      alt: 'Captura en vivo de Turismo Medellín - React 19 + Asistente IA',
-      badge: 'REACT 19 + IA EN VIVO',
+      alt: 'Captura en vivo de Turismo Medellín - React + Asistente IA',
+      badge: 'REACT + VITE LIVE',
       badgeClass: 'badge-cyan',
       statusPill: 'GITHUB PAGES LIVE',
-      description: 'Plataforma web turística con Asistente de IA integrado, planificador inteligente de rutas, análisis de trayectos y chat widget interactivo. Construida en React 19 y Vite.',
-      tags: ['React 19', 'Asistente IA', 'Route Planner', 'Vite', 'GitHub Pages'],
+      description: 'Plataforma web turística interactiva construida en React y Vite. Incluye planificador de rutas y asistente de viaje, publicada y funcional en GitHub Pages.',
+      tags: ['React', 'Vite', 'Asistente IA', 'Planificador Rutas', 'GitHub Pages'],
       demoUrl: 'https://jero1211.github.io/Turismo',
       githubUrl: 'https://github.com/Jero1211/Turismo'
     },
@@ -61,11 +61,11 @@ function initSpecimenShowcase() {
       alt: 'Captura real de CampusAudit PRO - Formulario de Auditoría en Campo',
       badge: 'IONIC + CAPACITOR',
       badgeClass: 'badge-yellow',
-      statusPill: 'OFFLINE SQLITE',
-      description: 'Microapp de campo y auditoría técnica para UniLasallista: inspección de infraestructura, categorización de criticidad, almacenamiento offline con SQLite y sincronización centralizada.',
-      tags: ['Ionic', 'Capacitor', 'Angular', 'SQLite', 'Inspección en Campo'],
+      statusPill: 'APP MÓVIL HÍBRIDA',
+      description: 'Microapp móvil para auditorías en UniLasallista. Construida con Ionic y Capacitor con asistencia de IA para registrar inspecciones y persistir datos localmente en dispositivos móviles.',
+      tags: ['Ionic', 'Capacitor', 'Angular', 'Persistencia Local', 'Desarrollo Móvil'],
       demoUrl: '#campus-audit',
-      githubUrl: 'https://github.com/Jero1211'
+      githubUrl: 'https://github.com/Jero1211/microapp-inspecciones'
     }
   ];
 

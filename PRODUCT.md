@@ -10,39 +10,39 @@ web
 HTML, CSS moderno y JavaScript puro
 
 ## Users
-Reclutadores técnicos, líderes de ingeniería y fundadores que buscan desarrolladores con sólida formación en desarrollo Full-Stack y Frontend moderno (React, Node.js, JavaScript, APIs REST, bases de datos y arquitectura web), valorando la capacidad de construir y desplegar software real.
+Reclutadores técnicos, líderes de ingeniería y empresas que buscan talento junior o practicantes universitarios de Ingeniería de Software con mentalidad de aprendizaje continuo, honestidad técnica y capacidad demostrada para construir proyectos prácticos apoyándose en herramientas modernas e inteligencia artificial.
 
 ## Product Purpose
-Servir como carta de presentación digital de máximo nivel que demuestre de forma tangible la competencia técnica de Jero como Desarrollador Full-Stack & Frontend Moderno, destacando proyectos con código en producción, arquitecturas resistentes y diseño de interfaces de usuario pulidas.
+Servir como portafolio digital auténtico y profesional que demuestre el proceso de aprendizaje práctico de Jero como estudiante de 6.º semestre de Ingeniería de Software, destacando su capacidad para desarrollar aplicaciones web y móviles reales, investigar soluciones y utilizar la inteligencia artificial de manera responsable y productiva como acelerador técnico.
 
 ## Positioning
-Desarrollador Full-Stack & Frontend que combina fundamentos sólidos de ingeniería con atención al diseño de interfaces. Se diferencia de los perfiles junior genéricos al presentar proyectos reales con despliegues activos, resiliencia offline, asistentes de IA integrados y automatización operativa completa.
+Estudiante de Ingeniería de Software (6.º semestre) y desarrollador en formación con enfoque en desarrollo Web y Móvil. Destaca por su honestidad técnica, disciplina de aprendizaje diario y habilidad para transformar necesidades concretas en software funcional (persistencia offline, React, Node.js/MongoDB, Ionic/Capacitor) combinando investigación rigurosa y herramientas de IA.
 
 ## Operating Context
-Escaneo rápido por parte de reclutadores y líderes técnicos (evaluación en 30-60 segundos). Debe comunicar inmediatamente el stack principal (React, Node.js, JavaScript, Express, MongoDB), ofrecer acceso con 1 clic a demos funcionales y repositorios limpios en GitHub, y brindar una experiencia responsiva impecable en móvil y escritorio.
+Evaluación ágil por reclutadores en busca de practicantes o perfiles junior (revisión en 30-60 segundos). Comunica de inmediato el nivel formativo (6.º semestre), disponibilidad para prácticas o roles junior, acceso a proyectos con código en GitHub y demo en vivo, y una experiencia web rápida y visualmente cuidada.
 
 ## Capabilities and Constraints
 - Estructura 100% estática en HTML5 semántico, CSS3 moderno (Custom Properties, CSS Grid, Flexbox, microinteracciones elegantes) y JavaScript Vanilla sin dependencias pesadas.
 - Rendimiento ultraveloz, cero librerías innecesarias, cumplimiento de contraste accesible WCAG AA (>4.5:1).
-- Secciones: Hero con propuesta de valor personal y selector interactivo de proyectos, Galería de Proyectos Reales con métricas y enlaces, Arsenal Técnico (Frontend, Backend, Herramientas, Buenas Prácticas), Perfil y Filosofía, y Canales de Contacto directo.
+- Secciones: Hero con propuesta de valor personal y selector interactivo de proyectos, Galería de Proyectos Prácticos, Matriz de Tecnologías y Aprendizaje, Sobre Mí con perfil honesto en terminal JSON, y Formulario de Contacto directo.
 
 ## Brand Commitments
-- Identidad: Jero — Desarrollador Full-Stack & Frontend Moderno.
-- Tono: Técnico, seguro, apasionado por el código bien hecho, accesible y enfocado en entregar valor real.
-- Estética: Sofisticada, moderna y elegante (dark mode con paleta refinada, tipografía clara y jerarquía visual nítida).
+- Identidad: Jero — Estudiante de Ingeniería de Software & Desarrollador en Formación.
+- Tono: Honesto, humilde, motivado, proactivo y transparente sobre el uso de la IA como acelerador de aprendizaje.
+- Estética: Sofisticada, moderna y elegante (dark mode con paleta refinada cyan/esmeralda, tipografía clara y jerarquía visual nítida).
 
 ## Evidence on Hand
-- **SIS-TERREMOTO:** Sistema táctico de evacuación y triaje START offline-first (`https://github.com/Jero1211/sis-terremoto`).
-- **Turismo Medellín:** Aplicación web con Asistente de IA y planificador dinámico de rutas en React 19 y Vite, desplegada en vivo (`https://github.com/Jero1211/Turismo`, demo: `https://jero1211.github.io/Turismo/`).
-- **CaddiePro:** Plataforma Full-Stack para gestión de horarios y becarios de Fundación Club Campestre con Node.js, Express, MongoDB y reportes PDF (`https://github.com/Jero1211/caddiepro-app-horarios`).
-- **MicroApp Inspecciones:** App móvil híbrida para auditorías en terreno con Ionic 9, Angular y Capacitor Android (`https://github.com/Jero1211/microapp-inspecciones`).
+- **SIS-TERREMOTO:** Proyecto universitario para UniLasallista enfocado en triaje START y persistencia offline ante emergencias sísmicas (`https://github.com/Jero1211/sis-terremoto`).
+- **Turismo Medellín:** Aplicación web interactiva en React y Vite con Asistente de IA y planificador de rutas, desplegada en GitHub Pages (`https://github.com/Jero1211/Turismo`, demo: `https://jero1211.github.io/Turismo/`).
+- **CaddiePro:** Aplicación web para Fundación Club Campestre con Node.js, Express, MongoDB, lectura de Excel y reportes PDF (`https://github.com/Jero1211/caddiepro-app-horarios`).
+- **CampusAudit PRO:** Microapp móvil de inspección académica para UniLasallista con Ionic, Capacitor y persistencia local (`https://github.com/Jero1211/microapp-inspecciones`).
 - **Contacto verificado:** Correo directo `aztracto8@gmail.com` y perfil GitHub `https://github.com/Jero1211`.
 
 ## Product Principles
-1. **Claridad inmediata:** En los primeros 5 segundos el visitante identifica quién es Jero, su especialidad (Full-Stack / Frontend Moderno) y su disponibilidad.
-2. **Evidencia real sobre promesas:** El portafolio se apoya en 4 sistemas con código fuente público, repositorios organizados y aplicaciones en vivo.
-3. **Calidad de ingeniería:** Código limpio, arquitecturas justificadas (offline-first, APIs REST, SPAs de alto rendimiento) y atención al detalle.
-4. **Accesibilidad y sobriedad:** Jerarquía tipográfica legible, contrastes contrastados y navegación sin fricción.
+1. **Honestidad y transparencia:** Se presenta claramente como estudiante de 6.º semestre en continuo aprendizaje, reconociendo el apoyo de herramientas de IA sin exageraciones innecesarias.
+2. **Evidencia práctica:** Demuestra iniciativa y habilidad a través de 4 proyectos reales con repositorios públicos y demostraciones funcionales.
+3. **Criterio técnico en desarrollo:** Enfoque en código limpio, comprensión de arquitecturas básicas y ganas de aprender en equipo.
+4. **Accesibilidad y diseño pulido:** Jerarquía visual clara, contrastes óptimos y rendimiento sin dependencias pesadas.
 
 ## Accessibility & Inclusion
 Cumplimiento estricto de WCAG AA: contraste cromático superior a 4.5:1 en todos los textos interactivos y de lectura, navegación accesible por teclado, semántica HTML5 adecuada y soporte para preferencias de reducción de movimiento.
