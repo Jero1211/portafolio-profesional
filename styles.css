@@ -906,9 +906,7 @@ p {
 
 /* --- Skills Matrix --- */
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-xl);
+  width: 100%;
 }
 
 .skill-group {
@@ -1451,7 +1449,7 @@ p {
   }
 
   .skills-grid {
-    grid-template-columns: 1fr;
+    width: 100%;
   }
 
   .about-grid {
