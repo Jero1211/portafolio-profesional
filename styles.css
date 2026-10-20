@@ -1373,6 +1373,14 @@ p {
   font-weight: 500;
   color: var(--accent-emerald-light);
   margin-bottom: 4px;
+  display: inline-flex;
+  align-items: center;
+  transition: color var(--transition-fast);
+}
+
+a.education-institution:hover {
+  color: var(--text-primary);
+  text-decoration: underline;
 }
 
 .education-period {
