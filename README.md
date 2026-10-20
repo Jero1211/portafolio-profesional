@@ -6,19 +6,23 @@
 > 🌐 **Sitio Web en Producción:** [https://jero1211.github.io/portafolio-profesional/](https://jero1211.github.io/portafolio-profesional/)
 
 ![HTML5](https://img.shields.io/badge/HTML5-Sem%C3%A1ntico-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-Vanilla_Moderno-1572B6?style=flat-square&logo=css3&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-Moderno-1572B6?style=flat-square&logo=css3&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-7952B3?style=flat-square&logo=bootstrap&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![GitHub Pages](https://img.shields.io/badge/Deploy-GitHub_Pages-brightgreen?style=flat-square&logo=github)
-![Dependencias](https://img.shields.io/badge/Dependencias-Zero%20(Vanilla)-success?style=flat-square)
 ![Rendimiento](https://img.shields.io/badge/Lighthouse-95%2B-brightgreen?style=flat-square)
 
 ---
 
-## 📌 Sobre el Portafolio
+## 📌 Sobre el Portafolio &amp; Rúbrica de Evaluación
 
-Este repositorio contiene el código fuente de mi **Portafolio Profesional**, diseñado y desarrollado desde cero para presentar de manera clara, interactiva y transparente mi perfil como estudiante de 6.º semestre de Ingeniería de Software.
+Este repositorio contiene el código fuente de mi **Portafolio Profesional**, estructurado bajo los lineamientos académicos de la asignatura de **Desarrollo Web (Parcial 2 - Prof. Néstor Vélez Vargas)** en UniLasallista, integrando el framework responsive **Bootstrap 5** y dando cumplimiento a todas las secciones exigidas:
 
-El sitio refleja mi enfoque práctico: aprender construyendo proyectos que resuelven necesidades reales, manteniendo honestidad sobre mis conocimientos y utilizando la **Inteligencia Artificial como un copiloto de desarrollo y acelerador de aprendizaje**.
+1. **Información Personal:** Perfil, ubicación y canales de contacto directo.
+2. **Estudios Realizados:** Formación superior universitaria, educación media y autoformación.
+3. **Proyectos:** SIS-TERREMOTO, Turismo Medellín, CaddiePro y CampusAudit PRO.
+4. **Lenguajes de Programación:** JavaScript ES6+, TypeScript, HTML5/CSS3 y SQL.
+5. **Áreas de Interés Profesional:** Frontend Web, Móvil Híbrido, Backend/APIs e IA Aplicada.
 
 ---
 

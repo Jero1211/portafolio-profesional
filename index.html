@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Bootstrap 5 Framework Responsive (Requisito Rúbrica Parcial 2 - 1.0 pto) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -24,8 +26,10 @@
       <nav class="main-nav" aria-label="Navegación principal">
         <ul class="nav-list">
           <li><a href="#proyectos" class="nav-link active">Proyectos</a></li>
-          <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
-          <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+          <li><a href="#habilidades" class="nav-link">Lenguajes &amp; Habilidades</a></li>
+          <li><a href="#estudios" class="nav-link">Estudios</a></li>
+          <li><a href="#intereses" class="nav-link">Áreas de Interés</a></li>
+          <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
           <li><a href="#contacto" class="nav-link">Contacto</a></li>
         </ul>
       </nav>
@@ -349,148 +353,323 @@
       </div>
     </section>
 
-    <!-- Skills Matrix Section -->
+    <!-- Skills Matrix Section: Section d (Lenguajes de programación) & Habilidades -->
     <section class="section section-darker" id="habilidades">
       <div class="container">
         <div class="section-header">
-          <span class="section-kicker">/Habilidades &amp; Aprendizaje</span>
-          <h2 class="section-title">TECNOLOGÍAS Y ENTORNO DE APRENDIZAJE</h2>
+          <span class="section-kicker">/Rúbrica d: Lenguajes &amp; Tecnologías</span>
+          <h2 class="section-title">LENGUAJES DE PROGRAMACIÓN &amp; HABILIDADES</h2>
           <p class="section-subtitle">
-            Herramientas que estudio en la universidad, aplico en proyectos prácticos y fortalezco a diario apoyándome en documentación y en la inteligencia artificial.
+            Lenguajes dominados y en práctica, frameworks y herramientas que estudio en la universidad y aplico en proyectos prácticos con apoyo de IA.
           </p>
         </div>
 
-        <div class="skills-grid">
-          <!-- Skill Category 1 -->
-          <div class="skill-group">
-            <h3 class="group-title">
-              <span class="inline-icon cyan" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polyline points="16 18 22 12 16 6"></polyline>
-                  <polyline points="8 6 2 12 8 18"></polyline>
-                </svg>
-              </span>
-              Desarrollo Web &amp; Frontend
-            </h3>
-            <p class="group-desc">Bases que aplico para estructurar y diseñar interfaces web funcionales y adaptables.</p>
+        <div class="row g-4 skills-grid">
+          <!-- Skill Category 1: Lenguajes de Programación (Requisito d) -->
+          <div class="col-12 col-lg-4">
+            <div class="skill-group h-100">
+              <h3 class="group-title">
+                <span class="inline-icon cyan" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                </span>
+                Lenguajes de Programación
+              </h3>
+              <p class="group-desc">Lenguajes que estudio y utilizo activamente para dar vida a la lógica y estructura del software.</p>
 
-            <ul class="skill-items">
-              <li class="skill-item">
-                <div class="skill-meta">
-                  <span class="skill-name">HTML5 &amp; CSS3</span>
-                  <span class="skill-level">En práctica continua</span>
-                </div>
-                <p class="skill-detail">Maquetación estructurada, diseño adaptable a dispositivos móviles (Flexbox, CSS Grid) y estilos limpios.</p>
-              </li>
+              <ul class="skill-items">
+                <li class="skill-item">
+                  <div class="skill-meta">
+                    <span class="skill-name">JavaScript (ES6+)</span>
+                    <span class="skill-level">Lenguaje Principal</span>
+                  </div>
+                  <p class="skill-detail">Manipulación avanzada del DOM, eventos, funciones asíncronas (Fetch, Async/Await) y desarrollo frontend y backend en Node.js.</p>
+                </li>
 
-              <li class="skill-item">
-                <div class="skill-meta">
-                  <span class="skill-name">JavaScript Moderno (ES6+)</span>
-                  <span class="skill-level">En formación constante</span>
-                </div>
-                <p class="skill-detail">Manipulación del DOM, lógica de eventos, consumo de APIs (Fetch, Async/Await) y persistencia en LocalStorage.</p>
-              </li>
+                <li class="skill-item">
+                  <div class="skill-meta">
+                    <span class="skill-name">TypeScript</span>
+                    <span class="skill-level">En práctica</span>
+                  </div>
+                  <p class="skill-detail">Tipado estático aplicado en Angular e Ionic para crear código móvil estructurado, predecible y escalable.</p>
+                </li>
 
-              <li class="skill-item">
-                <div class="skill-meta">
-                  <span class="skill-name">React &amp; Vite</span>
-                  <span class="skill-level">En proyectos prácticos</span>
-                </div>
-                <p class="skill-detail">Creación de componentes interactivos, hooks fundamentales y desarrollo de interfaces modernas como Turismo Medellín.</p>
-              </li>
-            </ul>
+                <li class="skill-item">
+                  <div class="skill-meta">
+                    <span class="skill-name">HTML5 &amp; CSS3</span>
+                    <span class="skill-level">Fundamento Sólido</span>
+                  </div>
+                  <p class="skill-detail">Estructura semántica, diseño adaptable multidispositivo (Flexbox, CSS Grid) y microinteracciones fluidas.</p>
+                </li>
+
+                <li class="skill-item">
+                  <div class="skill-meta">
+                    <span class="skill-name">SQL / Consultas de Datos</span>
+                    <span class="skill-level">Nivel Formativo</span>
+                  </div>
+                  <p class="skill-detail">Creación de tablas (DDL), inserciones, consultas relacionales y modelado de persistencia de datos.</p>
+                </li>
+              </ul>
+            </div>
           </div>
 
-          <!-- Skill Category 2 -->
-          <div class="skill-group">
-            <h3 class="group-title">
-              <span class="inline-icon copper" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                  <line x1="8" y1="21" x2="16" y2="21"></line>
-                  <line x1="12" y1="17" x2="12" y2="21"></line>
-                </svg>
-              </span>
-              Backend, Móvil &amp; Datos
-            </h3>
-            <p class="group-desc">Tecnologías con las que exploro la lógica de servidor, persistencia y desarrollo para móviles.</p>
+          <!-- Skill Category 2: Frameworks & Tecnologías Web -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="skill-group h-100">
+              <h3 class="group-title">
+                <span class="inline-icon copper" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                </span>
+                Frameworks &amp; Ecosistema
+              </h3>
+              <p class="group-desc">Frameworks modernos para agilizar el diseño responsivo, la lógica de servidor y aplicaciones móviles.</p>
 
-            <ul class="skill-items">
-              <li class="skill-item">
-                <div class="skill-meta">
-                  <span class="skill-name">Node.js &amp; Express</span>
-                  <span class="skill-level">Nivel formativo</span>
-                </div>
-                <p class="skill-detail">Creación de rutas y endpoints para conectar el frontend con servicios de datos (como en CaddiePro).</p>
-              </li>
+              <ul class="skill-items">
+                <li class="skill-item">
+                  <div class="skill-meta">
+                    <span class="skill-name">Bootstrap 5</span>
+                    <span class="skill-level">Framework Responsive</span>
+                  </div>
+                  <p class="skill-detail">Sistema de grillas (Grid System: containers, rows, cols), breakpoints responsivos (sm, md, lg) y utilidades de espaciado y alineación.</p>
+                </li>
 
-              <li class="skill-item">
-                <div class="skill-meta">
-                  <span class="skill-name">MongoDB &amp; Almacenamiento Local</span>
-                  <span class="skill-level">Práctica aplicada</span>
-                </div>
-                <p class="skill-detail">Modelado básico de datos, operaciones CRUD y manejo de almacenamiento local en el navegador o dispositivo móvil.</p>
-              </li>
+                <li class="skill-item">
+                  <div class="skill-meta">
+                    <span class="skill-name">React 19 &amp; Vite</span>
+                    <span class="skill-level">En proyectos</span>
+                  </div>
+                  <p class="skill-detail">Componentes modulares reutilizables, hooks reactivos, React Router y empaquetado rápido para producción (Turismo Medellín).</p>
+                </li>
 
-              <li class="skill-item">
-                <div class="skill-meta">
-                  <span class="skill-name">Ionic &amp; Capacitor</span>
-                  <span class="skill-level">Exploración móvil</span>
-                </div>
-                <p class="skill-detail">Desarrollo de aplicaciones móviles híbridas para Android a partir de componentes web y APIs nativas del dispositivo.</p>
-              </li>
-            </ul>
+                <li class="skill-item">
+                  <div class="skill-meta">
+                    <span class="skill-name">Node.js &amp; Express</span>
+                    <span class="skill-level">Backend Formativo</span>
+                  </div>
+                  <p class="skill-detail">Construcción de APIs REST modulares, enrutamiento, middlewares y conexión a servicios de datos (CaddiePro).</p>
+                </li>
+
+                <li class="skill-item">
+                  <div class="skill-meta">
+                    <span class="skill-name">Ionic &amp; Capacitor</span>
+                    <span class="skill-level">Móvil Híbrido</span>
+                  </div>
+                  <p class="skill-detail">Desarrollo de aplicaciones móviles empaquetadas para Android con persistencia offline en el dispositivo (CampusAudit PRO).</p>
+                </li>
+              </ul>
+            </div>
           </div>
 
-          <!-- Skill Category 3 -->
-          <div class="skill-group">
-            <h3 class="group-title">
-              <span class="inline-icon cyan" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                </svg>
-              </span>
-              IA, Herramientas &amp; Flujo
-            </h3>
-            <p class="group-desc">Mi método de trabajo diario para acelerar el aprendizaje y resolver problemas con criterio.</p>
+          <!-- Skill Category 3: Herramientas, IA & Flujo -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="skill-group h-100">
+              <h3 class="group-title">
+                <span class="inline-icon cyan" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  </svg>
+                </span>
+                IA, Herramientas &amp; Flujo
+              </h3>
+              <p class="group-desc">Mi método de trabajo diario para acelerar el aprendizaje y resolver problemas con criterio.</p>
 
-            <ul class="skill-items">
-              <li class="skill-item">
-                <div class="skill-meta">
-                  <span class="skill-name">Desarrollo Asistido por IA</span>
-                  <span class="skill-level">Habilidad clave</span>
-                </div>
-                <p class="skill-detail">Uso activo de herramientas de IA (ChatGPT, Claude, Copilot) como aceleradores para investigar soluciones, entender código complejo y aprender más rápido.</p>
-              </li>
+              <ul class="skill-items">
+                <li class="skill-item">
+                  <div class="skill-meta">
+                    <span class="skill-name">Desarrollo con Asistencia IA</span>
+                    <span class="skill-level">Habilidad Clave</span>
+                  </div>
+                  <p class="skill-detail">Uso productivo de modelos de IA (ChatGPT, Claude, Copilot) como aceleradores para depurar errores, investigar arquitecturas y entender código.</p>
+                </li>
 
-              <li class="skill-item">
-                <div class="skill-meta">
-                  <span class="skill-name">Git &amp; GitHub</span>
-                  <span class="skill-level">Uso continuo</span>
-                </div>
-                <p class="skill-detail">Control de versiones, gestión de repositorios, flujos ordenados y despliegues con GitHub Pages.</p>
-              </li>
+                <li class="skill-item">
+                  <div class="skill-meta">
+                    <span class="skill-name">Git &amp; GitHub</span>
+                    <span class="skill-level">Uso Continuo</span>
+                  </div>
+                  <p class="skill-detail">Control de versiones, flujo de trabajo ordenado por commits y ramas, y despliegue automatizado en GitHub Pages.</p>
+                </li>
 
-              <li class="skill-item">
-                <div class="skill-meta">
-                  <span class="skill-name">Aprendizaje y Curiosidad</span>
-                  <span class="skill-level">Motivación diaria</span>
-                </div>
-                <p class="skill-detail">Capacidad para investigar en documentación técnica, resolver dudas y transformar conceptos teóricos en aplicaciones que funcionan.</p>
-              </li>
-            </ul>
+                <li class="skill-item">
+                  <div class="skill-meta">
+                    <span class="skill-name">MongoDB &amp; Persistencia</span>
+                    <span class="skill-level">Práctica Aplicada</span>
+                  </div>
+                  <p class="skill-detail">Almacenamiento NoSQL con esquemas en Mongoose y persistencia local en navegador (LocalStorage) y móvil.</p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- About Me Section -->
+    <!-- Section b: Estudios Realizados (Requisito b de la Rúbrica) -->
+    <section class="section" id="estudios">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">/Rúbrica b: Educación &amp; Trayectoria</span>
+          <h2 class="section-title">ESTUDIOS REALIZADOS</h2>
+          <p class="section-subtitle">
+            Mi trayectoria formativa universitaria en ingeniería, educación media y autoformación continua en desarrollo de software.
+          </p>
+        </div>
+
+        <div class="row g-4 education-grid">
+          <!-- Card 1: Pregrado Universitario -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="education-card h-100">
+              <span class="education-badge">Pregrado Universitario</span>
+              <div class="education-icon cyan">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <h3 class="education-degree">Ingeniería Informática / Software</h3>
+              <span class="education-institution">Corporación Universitaria Lasallista (UniLasallista)</span>
+              <span class="education-period">2024 &ndash; Presente &bull; 6.º Semestre en Curso</span>
+              <p class="education-desc">
+                Formación en asignaturas clave: Desarrollo Web, Aplicaciones Móviles, Arquitectura de Software, Bases de Datos, Estructuras de Datos y Algoritmia.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2: Bachiller Académico -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="education-card h-100">
+              <span class="education-badge">Educación Secundaria</span>
+              <div class="education-icon copper">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+              </div>
+              <h3 class="education-degree">Bachiller Académico</h3>
+              <span class="education-institution">Educación Media / Secundaria</span>
+              <span class="education-period">Graduado</span>
+              <p class="education-desc">
+                Formación fundamentada en pensamiento lógico-matemático, análisis cuantitativo, ciencias naturales y primeros proyectos de ofimática y programación.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3: Formación Complementaria -->
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="education-card h-100">
+              <span class="education-badge">Autoformación &amp; Cursos</span>
+              <div class="education-icon cyan">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="education-degree">Desarrollo Web &amp; Tecnologías Modernas</h3>
+              <span class="education-institution">Formación Continua &amp; Documentación Oficial</span>
+              <span class="education-period">Aprendizaje Activo Diario</span>
+              <p class="education-desc">
+                Estudio práctico de HTML5, CSS3, JavaScript ES6+, Bootstrap 5, React, Node.js, Express, Git/GitHub y técnicas de programación asistida por IA.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section e: Áreas de Interés Profesional (Requisito e de la Rúbrica) -->
+    <section class="section section-darker" id="intereses">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-kicker">/Rúbrica e: Vocación &amp; Futuro</span>
+          <h2 class="section-title">ÁREAS DE INTERÉS PROFESIONAL</h2>
+          <p class="section-subtitle">
+            Campos del desarrollo tecnológico e ingeniería en los que proyecto mi crecimiento profesional, prácticas universitarias y roles junior.
+          </p>
+        </div>
+
+        <div class="row g-4 interests-grid">
+          <!-- Interés 1: Desarrollo Frontend -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="interest-card h-100">
+              <div class="interest-icon-box cyan">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <h3 class="interest-title">Desarrollo Web Frontend</h3>
+              <p class="interest-desc">
+                Creación de interfaces limpias, dinámicas y responsivas con React, Bootstrap 5 y JavaScript moderno, cuidando la usabilidad y la accesibilidad.
+              </p>
+            </div>
+          </div>
+
+          <!-- Interés 2: Aplicaciones Móviles -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="interest-card h-100">
+              <div class="interest-icon-box copper">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                  <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                </svg>
+              </div>
+              <h3 class="interest-title">Desarrollo Móvil Híbrido</h3>
+              <p class="interest-desc">
+                Construcción de aplicaciones móviles para Android aprovechando Ionic y Capacitor con almacenamiento de datos local y diseño táctil.
+              </p>
+            </div>
+          </div>
+
+          <!-- Interés 3: Backend & APIs REST -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="interest-card h-100">
+              <div class="interest-icon-box cyan">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="12" x2="2" y2="12"></line>
+                  <path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path>
+                  <line x1="6" y1="16" x2="6.01" y2="16"></line>
+                  <line x1="10" y1="16" x2="10.01" y2="16"></line>
+                </svg>
+              </div>
+              <h3 class="interest-title">Backend &amp; APIs REST</h3>
+              <p class="interest-desc">
+                Estructuración de servicios web en Node.js y Express, integración con MongoDB y procesamiento de datos para dar soporte a aplicaciones cliente.
+              </p>
+            </div>
+          </div>
+
+          <!-- Interés 4: IA Aplicada -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="interest-card h-100">
+              <div class="interest-icon-box copper">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+                </svg>
+              </div>
+              <h3 class="interest-title">IA Aplicada al Software</h3>
+              <p class="interest-desc">
+                Integración de asistentes inteligentes y flujos de trabajo asistidos por IA para aumentar la productividad y enriquecer aplicaciones web.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section: Section a (Información Personal & Sobre Mí) -->
     <section class="section" id="sobre-mi">
       <div class="container">
         <div class="about-grid">
           <div class="about-narrative">
-            <span class="section-kicker">/Sobre Mí</span>
-            <h2 class="section-title">SOBRE MÍ Y MI APRENDIZAJE</h2>
+            <span class="section-kicker">/Rúbrica a: Información Personal</span>
+            <h2 class="section-title">INFORMACIÓN PERSONAL &amp; SOBRE MÍ</h2>
             
             <p class="lead-text">
               Soy estudiante de 6.º semestre de Ingeniería de Software, en constante formación y con muchas ganas de aprender y construir cada día.
@@ -668,7 +847,7 @@
     <div class="container footer-inner">
       <div class="footer-left">
         <span class="footer-brand">JERO &bull; PORTAFOLIO PROFESIONAL</span>
-        <span class="footer-copy">Construido con HTML5, CSS3 puro y JavaScript moderno. Cero dependencias externas.</span>
+        <span class="footer-copy">Desarrollado con Bootstrap 5, HTML5 semántico, CSS3 y JavaScript moderno &bull; UniLasallista 2026.</span>
       </div>
       <div class="footer-right">
         <a href="#top" class="back-to-top" aria-label="Volver arriba">
@@ -682,6 +861,8 @@
     </div>
   </footer>
 
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="app.js"></script>
 </body>
 </html>

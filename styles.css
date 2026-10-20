@@ -98,6 +98,18 @@ body {
   min-height: 100vh;
 }
 
+/* Bootstrap Overrides & Harmony */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  color: inherit;
+}
+p {
+  margin-bottom: 0;
+}
+
 /* Themed Browser Surfaces */
 ::selection {
   background-color: var(--accent-cyan);
@@ -1298,6 +1310,130 @@ body {
 
 .back-to-top:hover {
   color: var(--accent-cyan);
+}
+
+/* ==========================================================================
+   ACADEMIC RUBRIC COMPONENTS (Bootstrap 5 Compatible Grid)
+   ========================================================================== */
+
+/* --- Education Section --- */
+.education-card {
+  background-color: var(--bg-surface-1);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform var(--transition-smooth), border-color var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.education-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-highlight);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4);
+}
+
+.education-badge {
+  align-self: flex-start;
+  font-size: 0.72rem;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
+  background: var(--accent-indigo-dim);
+  color: var(--accent-indigo-light);
+  border: 1px solid rgba(129, 140, 248, 0.25);
+  margin-bottom: var(--space-md);
+}
+
+.education-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: var(--bg-surface-2);
+  border: 1px solid var(--border-subtle);
+  margin-bottom: var(--space-md);
+}
+
+.education-icon.cyan { color: var(--accent-indigo-light); }
+.education-icon.copper { color: var(--accent-emerald-light); }
+
+.education-degree {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.education-institution {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--accent-emerald-light);
+  margin-bottom: 4px;
+}
+
+.education-period {
+  font-size: 0.8rem;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  margin-bottom: var(--space-sm);
+}
+
+.education-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  margin-top: auto;
+}
+
+/* --- Professional Interests Section --- */
+.interest-card {
+  background-color: var(--bg-surface-1);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-smooth), border-color var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.interest-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-highlight);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4);
+}
+
+.interest-icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: var(--radius-md);
+  background: var(--bg-surface-2);
+  border: 1px solid var(--border-subtle);
+  margin-bottom: var(--space-md);
+}
+
+.interest-icon-box.cyan { color: var(--accent-indigo-light); }
+.interest-icon-box.copper { color: var(--accent-emerald-light); }
+
+.interest-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: var(--space-xs);
+}
+
+.interest-desc {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
 }
 
 /* --- Responsive Breakpoints --- */
